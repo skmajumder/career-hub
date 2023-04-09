@@ -1,0 +1,9 @@
+.banner {
+  background-color: #f9f9ff;
+}
+
+.banner-text--highlights {
+  background: -webkit-linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

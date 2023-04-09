@@ -1,6 +1,7 @@
 .header {
   background-color: #f9f9ff;
 }
+
 .text-logo,
 .text-logo:hover {
   color: #1a1919;
@@ -12,4 +13,26 @@
 
 .nav-list--item a {
   color: #757575;
+  transition: all 300ms;
+}
+
+.nav-list--item:hover a {
+  color: #9873ff;
+}
+
+.btn-apply {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 27px;
+  border: none;
+  padding: 5px 10px;
+  transition: all 300ms;
+}
+
+.btn-apply:hover {
+  background: linear-gradient(90deg, #7e8ffed0 0%, #9873ffda 100%);
+  transform: scale(1.05);
 }

@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header py-3">
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-3">
             <Link to={"/"} className="text-logo text-decoration-none">
-              <p className="fs-3 fw-bold">JobBox</p>
+              <span className="fs-3 fw-bold">JobBox</span>
             </Link>
           </div>
           <div className="col-lg-6">
@@ -48,7 +48,7 @@ const Header = () => {
             </nav>
           </div>
           <div className="col-lg-3 text-end">
-            <button className="btn btn-success">Start Applying</button>
+            <button className="btn-apply">Start Applying</button>
           </div>
         </div>
       </div>
