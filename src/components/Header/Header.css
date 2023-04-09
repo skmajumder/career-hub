@@ -1,0 +1,15 @@
+.header {
+  background-color: #f9f9ff;
+}
+.text-logo,
+.text-logo:hover {
+  color: #1a1919;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list--item a {
+  color: #757575;
+}
