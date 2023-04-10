@@ -1,0 +1,110 @@
+[
+  {
+    "id": "0001",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Software Engineer",
+    "companyName": "ABC Company",
+    "remoteOrOnsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "jobDescription": "We are seeking a highly motivated software engineer to join our team.",
+    "jobResponsibility": "- Design and develop software solutions\n- Troubleshoot and debug applications\n- Collaborate with cross-functional teams to identify and solve complex problems",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contactInformation": {
+      "phone": "(555) 123-4567",
+      "email": "jobs@abccompany.com"
+    }
+  },
+  {
+    "id": "0002",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Product Manager",
+    "companyName": "XYZ Inc",
+    "remoteOrOnsite": "Onsite",
+    "location": "New York, NY",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$130,000 - $160,000",
+    "jobDescription": "We are looking for an experienced product manager to lead our team.",
+    "jobResponsibility": "- Define product roadmap and strategy\n- Collaborate with engineering and design teams\n- Conduct market research and user studies",
+    "educationalRequirements": "Bachelor's or Master's degree in Business Administration or related field",
+    "experiences": "5+ years of experience in product management",
+    "contactInformation": {
+      "phone": "(555) 987-6543",
+      "email": "jobs@xyzinc.com"
+    }
+  },
+  {
+    "id": "0003",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "ABC Company",
+    "remoteOrOnsite": "Remote",
+    "location": "Chicago, IL",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "jobDescription": "We are seeking a marketing manager to lead our marketing team.",
+    "jobResponsibility": "- Develop and execute marketing campaigns\n- Manage social media accounts\n- Analyze market trends and customer behavior",
+    "educationalRequirements": "Bachelor's or Master's degree in Marketing or related field",
+    "experiences": "5+ years of experience in marketing",
+    "contactInformation": {
+      "phone": "(555) 222-3333",
+      "email": "jobs@abccompany.com"
+    }
+  },
+  {
+    "id": "0004",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Graphic Designer",
+    "companyName": "Design Co",
+    "remoteOrOnsite": "Onsite",
+    "location": "Los Angeles, CA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "jobDescription": "We are looking for a creative graphic designer to join our team.",
+    "jobResponsibility": "- Design marketing materials and visual assets\n- Collaborate with marketing and product teams\n- Ensure brand consistency across all channels",
+    "educationalRequirements": "Bachelor's or Master's degree in Graphic Design or related field",
+    "experiences": "3+ years of experience in graphic design",
+    "contactInformation": {
+      "phone": "(555) 444-5555",
+      "email": "jobs@designco.com"
+    }
+  },
+  {
+    "id": "0005",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Accountant",
+    "companyName": "Finance Inc",
+    "remoteOrOnsite": "Onsite",
+    "location": "Boston, MA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "jobDescription": "We are seeking an experienced accountant to manage our financial operations.",
+    "jobResponsibility": "- Prepare financial statements and reports\n- Ensure compliance with accounting principles and regulations\n- Manage accounts payable and receivable",
+    "educationalRequirements": "Bachelor's or Master's degree in Accounting or related field",
+    "experiences": "5+ years of experience in accounting",
+    "contactInformation": {
+      "phone": "(555) 999-0000",
+      "email": "jobs@financeinc.com"
+    }
+  },
+  {
+    "id": "0006",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "HR Manager",
+    "companyName": "HR Co",
+    "remoteOrOnsite": "Remote",
+    "location": "Denver, CO",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "jobDescription": "We are seeking an HR manager to oversee our human resources operations.",
+    "jobResponsibility": "- Develop and implement HR policies and procedures\n- Manage employee benefits and compensation\n- Recruit and onboard new employees",
+    "educationalRequirements": "Bachelor's or Master's degree in Human Resources or related field",
+    "experiences": "7+ years of experience in HR management",
+    "contactInformation": {
+      "phone": "(555) 222-3333",
+      "email": "jobs@hrco.com"
+    }
+  }
+]

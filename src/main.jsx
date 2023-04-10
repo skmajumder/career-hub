@@ -9,6 +9,7 @@ import Applied from "./components/Applied/Applied";
 import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import JobDetails from "./components/JobDetails/JobDetails";
+import { fetchHomeData } from "./loader/loadHomepageData";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Home />, loader: fetchHomeData },
       { path: "statistics", element: <Statistics /> },
       { path: "applied-job", element: <Applied /> },
       { path: "job-details", element: <JobDetails /> },

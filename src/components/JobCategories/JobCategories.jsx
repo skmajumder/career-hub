@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import JobCategory from "../JobCategory/JobCategory";
+import { JobCategoriesContext } from "../Home/Home";
 
 const JobCategories = () => {
+  const jobCategories = useContext(JobCategoriesContext);
   return (
     <section className="section-padding job-categories">
       <div className="container">
@@ -17,7 +19,9 @@ const JobCategories = () => {
           </div>
         </div>
         <div className="row">
-          <JobCategory />
+          {jobCategories.map((jobCategory) => (
+            <JobCategory key={jobCategory.id} category={jobCategory} />
+          ))}
         </div>
       </div>
     </section>
