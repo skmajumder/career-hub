@@ -4,7 +4,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <>
-      <section className="banner">
+      <section className="banner py-5">
         <div className="container">
           <div className="banner-wrapper d-flex justify-content-center align-items-center">
             <div className="banner-text">
@@ -19,8 +19,12 @@ const Banner = () => {
               </p>
               <button className="btn-apply">Get Started</button>
             </div>
-            <div className="banner-img">
-              <img src="imgs/banner-img.png" className="img-fluid" alt="" />
+            <div className="banner-img-wrapper">
+              <img
+                src="imgs/banner-img.png"
+                className="banner-img img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>
