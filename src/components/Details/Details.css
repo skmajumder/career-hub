@@ -1,0 +1,24 @@
+.job-sidecard {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.job-description p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #757575;
+}
+
+.job-sidecard p {
+  font-size: 15px;
+}
+
+.job-sidecard .featured-job-icon {
+  color: rgba(126, 144, 254, 1);
+}
