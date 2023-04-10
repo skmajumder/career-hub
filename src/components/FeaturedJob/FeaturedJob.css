@@ -1,0 +1,19 @@
+.featured-job-item {
+  padding: 30px;
+}
+
+.featured-job-icon {
+  height: 17px;
+  width: 17px;
+}
+
+.job-type-box {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px 8px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid rgba(126, 144, 254, 1);
+  border-radius: 4px;
+}

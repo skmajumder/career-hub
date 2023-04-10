@@ -19,6 +19,29 @@ body {
   padding: 100px 0;
 }
 
+.section-padding:not(:last-child) {
+  padding-bottom: 0;
+}
+
 .headline-secondary {
   color: #1a1919;
+}
+
+.btn-job-details {
+  display: inline-block;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 27px;
+  border: none;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+.btn-job-details:hover {
+  background: linear-gradient(90deg, #7e8ffed0 0%, #9873ffda 100%);
+  transform: scale(1.05);
 }

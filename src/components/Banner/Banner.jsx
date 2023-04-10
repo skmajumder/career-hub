@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import BannerImg from "../../../public/imgs/banner-img.png";
 
 const Banner = () => {
   return (
@@ -20,11 +21,7 @@ const Banner = () => {
               <button className="btn-apply">Get Started</button>
             </div>
             <div className="banner-img-wrapper">
-              <img
-                src="imgs/banner-img.png"
-                className="banner-img img-fluid"
-                alt=""
-              />
+              <img src={BannerImg} className="banner-img img-fluid" alt="" />
             </div>
           </div>
         </div>
