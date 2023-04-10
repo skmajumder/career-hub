@@ -12,7 +12,7 @@ const FeaturedJob = () => {
       <div className="featured-job-item card">
         <div className="card-body">
           <img src={GoogleImg} className="mb-3" alt="" />
-          <h4 className="card-title mb-2">Technical Database Engineer</h4>
+          <h4 className="card-title fw-bolder mb-2">Technical Database Engineer</h4>
           <h5 className="card-subtitle mb-3 text-body-secondary">Google LLC</h5>
           <div className="job-type d-flex gap-3 mb-3">
             <span className="job-type-box fw-bolder">Remote</span>

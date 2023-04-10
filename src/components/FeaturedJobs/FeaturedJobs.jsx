@@ -16,11 +16,16 @@ const FeaturedJobs = () => {
             </p>
           </div>
         </div>
+        <div className="row mb-4">
+          <FeaturedJob />
+          <FeaturedJob />
+          <FeaturedJob />
+          <FeaturedJob />
+        </div>
         <div className="row">
-          <FeaturedJob />
-          <FeaturedJob />
-          <FeaturedJob />
-          <FeaturedJob />
+          <div className="col-lg-8 offset-lg-2 text-center">
+            <button className="btn-job-details">See All Jobs</button>
+          </div>
         </div>
       </div>
     </section>
