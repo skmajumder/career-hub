@@ -3,7 +3,7 @@ import "./JobCategory.css";
 
 const JobCategory = ({ category }) => {
   const { image, name, jobs } = category;
-  console.log(image, name, jobs);
+  
   return (
     <>
       <div className="col-lg-3">

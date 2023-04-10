@@ -1,9 +1,9 @@
 [
   {
     "id": "0001",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://i.ibb.co/w7C8grP/google.png",
     "jobTitle": "Software Engineer",
-    "companyName": "ABC Company",
+    "companyName": "Google",
     "remoteOrOnsite": "Remote",
     "location": "San Francisco, CA",
     "fulltimeOrParttime": "Full-time",
@@ -14,14 +14,14 @@
     "experiences": "3+ years of experience in software engineering",
     "contactInformation": {
       "phone": "(555) 123-4567",
-      "email": "jobs@abccompany.com"
+      "email": "jobs@google.com"
     }
   },
   {
     "id": "0002",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://i.ibb.co/1TYYSJ3/netflix.png",
     "jobTitle": "Product Manager",
-    "companyName": "XYZ Inc",
+    "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
     "location": "New York, NY",
     "fulltimeOrParttime": "Full-time",
@@ -32,14 +32,14 @@
     "experiences": "5+ years of experience in product management",
     "contactInformation": {
       "phone": "(555) 987-6543",
-      "email": "jobs@xyzinc.com"
+      "email": "jobs@netflix.com"
     }
   },
   {
     "id": "0003",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://i.ibb.co/w7C8grP/google.png",
     "jobTitle": "Marketing Manager",
-    "companyName": "ABC Company",
+    "companyName": "Google",
     "remoteOrOnsite": "Remote",
     "location": "Chicago, IL",
     "fulltimeOrParttime": "Full-time",
@@ -50,17 +50,17 @@
     "experiences": "5+ years of experience in marketing",
     "contactInformation": {
       "phone": "(555) 222-3333",
-      "email": "jobs@abccompany.com"
+      "email": "jobs@google.com"
     }
   },
   {
     "id": "0004",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://i.ibb.co/1r2zLFS/tesla.png",
     "jobTitle": "Graphic Designer",
-    "companyName": "Design Co",
+    "companyName": "Tesla Corporation",
     "remoteOrOnsite": "Onsite",
     "location": "Los Angeles, CA",
-    "fulltimeOrParttime": "Full-time",
+    "fulltimeOrParttime": "Part-time",
     "salary": "$80,000 - $100,000",
     "jobDescription": "We are looking for a creative graphic designer to join our team.",
     "jobResponsibility": "- Design marketing materials and visual assets\n- Collaborate with marketing and product teams\n- Ensure brand consistency across all channels",
@@ -73,9 +73,9 @@
   },
   {
     "id": "0005",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://i.ibb.co/hD2cymZ/airbnb.png",
     "jobTitle": "Accountant",
-    "companyName": "Finance Inc",
+    "companyName": "Airbnb",
     "remoteOrOnsite": "Onsite",
     "location": "Boston, MA",
     "fulltimeOrParttime": "Full-time",
@@ -91,8 +91,8 @@
   },
   {
     "id": "0006",
-    "companyLogo": "https://example.com/logo.png",
-    "jobTitle": "HR Manager",
+    "companyLogo": "https://i.ibb.co/1TYYSJ3/netflix.png",
+    "jobTitle": "Netflix",
     "companyName": "HR Co",
     "remoteOrOnsite": "Remote",
     "location": "Denver, CO",

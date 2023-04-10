@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import FeaturedJob from "../FeaturedJob/FeaturedJob";
+import { JobAvailableContent } from "../Home/Home";
 
 const FeaturedJobs = () => {
+  const jobs = useContext(JobAvailableContent);
+
+  const [availableJob, setAvailableJob] = useState(jobs);
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowAllJob = () => {
+    setShowAll(true);
+  };
+
   return (
     <section className="section-padding featured-jobs">
       <div className="container">
@@ -17,14 +27,19 @@ const FeaturedJobs = () => {
           </div>
         </div>
         <div className="row mb-4">
-          <FeaturedJob />
-          <FeaturedJob />
-          <FeaturedJob />
-          <FeaturedJob />
+          {showAll
+            ? availableJob.map((job) => <FeaturedJob key={job.id} job={job} />)
+            : availableJob
+                .slice(0, 4)
+                .map((job) => <FeaturedJob key={job.id} job={job} />)}
         </div>
         <div className="row">
           <div className="col-lg-8 offset-lg-2 text-center">
-            <button className="btn-job-details">See All Jobs</button>
+            {!showAll && (
+              <button onClick={handleShowAllJob} className="btn-job-details">
+                See All Jobs
+              </button>
+            )}
           </div>
         </div>
       </div>
