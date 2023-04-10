@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import AppliedJobList from "../AppliedJobList/AppliedJobList";
 
 const Applied = () => {
-    return (
-        <div>
-            <h2>Applied Jobs</h2>
-        </div>
-    );
+  return (
+    <>
+      <Breadcrumb />
+      <AppliedJobList />
+    </>
+  );
 };
 
 export default Applied;

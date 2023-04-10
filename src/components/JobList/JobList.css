@@ -1,0 +1,13 @@
+.applied-job-item {
+  grid-template-columns: 1fr 3fr 1fr;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 30px;
+  column-gap: 30px;
+}
+
+.company-img {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 50px 25px;
+}
