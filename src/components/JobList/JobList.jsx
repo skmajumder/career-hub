@@ -14,10 +14,6 @@ const JobList = ({ job }) => {
     location,
     fulltimeOrParttime,
     salary,
-    jobDescription,
-    jobResponsibility,
-    educationalRequirements,
-    experiences,
     contactInformation: { phone, email },
   } = job;
 
