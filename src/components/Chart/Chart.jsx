@@ -35,8 +35,8 @@ const Chart = () => {
           </div>
         </div>
         <div className="row align-items-center justify-content-center">
-          <div className="col-lg-4 text-center">
-            <PieChart width={400} height={400}>
+          <div className="col-lg-4 text-start text-lg-center">
+            <PieChart width={350} height={400}>
               <Pie
                 data={data}
                 cx={200}
