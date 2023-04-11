@@ -8,9 +8,9 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 
-const Details = ({ job }) => {
+const Details = ({ job, handleApplyNowJob }) => {
   const {
-    id,
+    id: jobID,
     companyLogo,
     jobTitle,
     companyName,
@@ -70,8 +70,8 @@ const Details = ({ job }) => {
                     <CalendarDaysIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Job Title:</strong> {jobTitle} <br /> ({fulltimeOrParttime}
-                    )
+                    <strong>Job Title:</strong> {jobTitle} <br /> (
+                    {fulltimeOrParttime})
                   </span>
                 </p>
               </div>
@@ -104,7 +104,12 @@ const Details = ({ job }) => {
                 </p>
               </div>
             </div>
-            <button className="btn-apply w-100">Apply Now</button>
+            <button
+              onClick={() => handleApplyNowJob(jobID)}
+              className="btn-apply w-100"
+            >
+              Apply Now
+            </button>
           </aside>
         </div>
       </div>

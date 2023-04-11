@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import { createContext } from "react";
+import { Toaster } from "react-hot-toast";
 
 export const JobCategoriesContext = createContext([]);
 export const JobAvailableContext = createContext([]);
@@ -21,6 +22,7 @@ function App() {
             </main>
             <Footer />
           </div>
+          <Toaster />
         </JobAvailableContext.Provider>
       </JobCategoriesContext.Provider>
     </>
