@@ -1,0 +1,8 @@
+@media (max-width: 704px) {
+  .recharts-default-legend {
+    margin-bottom: -70px !important;
+  }
+  .recharts-default-legend li {
+    display: block !important;
+  }
+}
