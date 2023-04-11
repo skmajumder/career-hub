@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="mb-5 d-grid footer-wrapper">
-          <div className="footer-about">
+        <div className="mb-5 row footer-wrapper">
+          <div className="col-6 col-sm-6 col-lg-4 footer-about">
             <h4 className="h4 mb-4">JobBox</h4>
             <p className="about-footer-text">
               There are many variations of passages of Lorem Ipsum , but the
@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
             <img src={SocialIcons} className="footer-social" alt="" />
           </div>
-          <div className="footer-menu">
+          <div className="col-6 col-sm-6 col-lg-2 footer-menu">
             <p className="h6 mb-3">Company</p>
             <ul className="footer-nav">
               <li>
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-menu">
+          <div className="col-6 col-sm-6 col-lg-2 footer-menu">
             <p className="h6 mb-3">Product</p>
             <ul className="footer-nav">
               <li>
@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-menu">
+          <div className="col-6 col-sm-6 col-lg-2 footer-menu">
             <p className="h6 mb-3">Support</p>
             <ul className="footer-nav">
               <li>
@@ -90,7 +90,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-address">
+          <div className="col-6 col-sm-6 col-lg-2 footer-address">
             <p className="h6 mb-3">Support</p>
             <address className="address">
               <p>524 Broadway , NYC</p>

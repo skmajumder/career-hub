@@ -21,7 +21,7 @@ const AppliedJobList = () => {
   }
   jobs = filter
     ? jobs.filter(
-        (job) => job.fulltimeOrParttime.toLowerCase() === filter.toLowerCase()
+        (job) => job.remoteOrOnsite.toLowerCase() === filter.toLowerCase()
       )
     : jobs;
 
@@ -32,16 +32,16 @@ const AppliedJobList = () => {
           <div className="col-lg-4 text-end">
             <div className="job-list-filter">
               <button
-                onClick={() => handleFilterChange("Full-time")}
+                onClick={() => handleFilterChange("Remote")}
                 className="btn-apply me-3"
               >
-                Full Time
+                Remote
               </button>
               <button
-                onClick={() => handleFilterChange("Part-time")}
+                onClick={() => handleFilterChange("Onsite")}
                 className="btn-apply"
               >
-                Part Time
+                Onsite
               </button>
             </div>
           </div>

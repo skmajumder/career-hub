@@ -4,10 +4,10 @@
   color: #ffffff;
 }
 
-.footer-wrapper {
+/* .footer-wrapper {
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   column-gap: 10px;
-}
+} */
 
 .about-footer-text {
   max-width: 70%;
