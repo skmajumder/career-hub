@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import BlogQuestion from "../BlogQuestion/BlogQuestion";
 
 const Blog = () => {
-    return (
-        <div>
-            <h2>Blog page</h2>
-        </div>
-    );
+  return (
+    <>
+      <Breadcrumb pageTitle={"Blog"} />
+      <BlogQuestion />
+    </>
+  );
 };
 
 export default Blog;

@@ -30,9 +30,8 @@ const Chart = () => {
         <div className="row mb-4">
           <div className="col-lg-8 offset-lg-2 text-center">
             <h2 className="headline-secondary h1 fw-bolder mb-3">
-              Statistics Pie Chart
+            All the assignments marks in the chart
             </h2>
-            <p>All the assignments marks in the chart</p>
           </div>
         </div>
         <div className="row align-items-center justify-content-center">

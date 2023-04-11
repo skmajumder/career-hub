@@ -50,3 +50,7 @@ strong {
   background: linear-gradient(90deg, #7e8ffed0 0%, #9873ffda 100%);
   transform: scale(1.05);
 }
+
+.question p{
+  line-height: 28px;
+}
