@@ -30,7 +30,7 @@ const JobList = ({ job }) => {
           <img src={companyLogo} alt="" />
         </div>
         <div className="applied-job-detail">
-          <h4 className="applied-job-title">{jobTitle}</h4>
+          <h4 className="applied-job-title mt-3 mt-lg-0">{jobTitle}</h4>
           <p className="applied-job-company">{companyName}</p>
           <div className="job-type d-flex gap-3 mb-3">
             <span className="job-type-box fw-bolder">{remoteOrOnsite}</span>
