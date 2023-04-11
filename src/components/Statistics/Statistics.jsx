@@ -1,10 +1,13 @@
 import React from "react";
+import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import Chart from "../Chart/Chart";
 
 const Statistics = () => {
   return (
-    <div>
-      <h2>Statistics page</h2>
-    </div>
+    <>
+      <Breadcrumb pageTitle={"Statistics"} />
+      <Chart />
+    </>
   );
 };
 

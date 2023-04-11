@@ -14,7 +14,7 @@ const AppliedJobList = () => {
     }
   }
 
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState(false);
 
   function handleFilterChange(value) {
     setFilter(value);
