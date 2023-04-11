@@ -1,6 +1,7 @@
 import React from "react";
 import "./FeaturedJob.css";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedJob = ({ job }) => {
   const {
@@ -18,6 +19,13 @@ const FeaturedJob = ({ job }) => {
     experiences,
     contactInformation: { phone, email },
   } = job;
+
+  const navigate = useNavigate();
+
+  function navigateToJobDetails(jobID) {
+    navigate(`/job-details/${id}`);
+  }
+
   return (
     <div className="col-lg-6 mb-4">
       <div className="featured-job-item card">
@@ -45,7 +53,10 @@ const FeaturedJob = ({ job }) => {
               <span>Salary : {salary}</span>
             </div>
           </div>
-          <button className="btn-job-details">
+          <button
+            onClick={() => navigateToJobDetails(id)}
+            className="btn-job-details"
+          >
             View Details
           </button>
         </div>
