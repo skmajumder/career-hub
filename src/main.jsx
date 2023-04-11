@@ -16,6 +16,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+    loader: fetchHomeData,
     children: [
       { path: "/", element: <Home />, loader: fetchHomeData },
       { path: "statistics", element: <Statistics /> },

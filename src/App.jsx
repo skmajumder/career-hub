@@ -1,19 +1,29 @@
-import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header/Header";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import { createContext } from "react";
+
+export const JobCategoriesContext = createContext([]);
+export const JobAvailableContext = createContext([]);
 
 function App() {
+  const [category, jobs] = useLoaderData();
   return (
-    <div className="App">
-      <Header />
-      <main className="main">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <JobCategoriesContext.Provider value={category}>
+        <JobAvailableContext.Provider value={jobs}>
+          <div className="App">
+            <Header />
+            <main className="main">
+              <Outlet />
+            </main>
+            <Footer />
+          </div>
+        </JobAvailableContext.Provider>
+      </JobCategoriesContext.Provider>
+    </>
   );
 }
 

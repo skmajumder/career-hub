@@ -8,38 +8,47 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 
-const Details = () => {
+const Details = ({ job }) => {
+  const {
+    id,
+    companyLogo,
+    jobTitle,
+    companyName,
+    remoteOrOnsite,
+    location,
+    fulltimeOrParttime,
+    salary,
+    jobDescription,
+    jobResponsibility,
+    educationalRequirements,
+    experiences,
+    contactInformation: { phone, email },
+  } = job;
+
   return (
     <section className="section-padding">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
             <div className="job-description">
+              <p className="company">
+                <strong>Company:</strong> {companyName}
+              </p>
               <p className="description">
-                <strong>Job Description:</strong> A UI/UX (User Interface/User
-                Experience) designer is responsible for designing and creating
-                engaging and effective interfaces for software and web
-                applications. This includes designing the layout, visual design,
-                and interactivity of the user interface.
+                <strong>Job Description:</strong> {jobDescription}
               </p>
               <p className="responsibility">
-                <strong>Job Responsibility:</strong> Collaborating with
-                cross-functional teams: UI/UX designers often work closely with
-                other teams, including product management, engineering, and
-                marketing, to ensure that the user interface is aligned with
-                business and technical requirements. You will need to be able to
-                effectively communicate your design ideas and gather feedback
-                from other team members.
+                <strong>Job Responsibility:</strong> {jobResponsibility}
               </p>
               <p className="requirements">
                 <strong>Educational Requirements:</strong>
                 <br />
-                Bachelor degree to complete any reputational university.
+                {educationalRequirements}
               </p>
               <p className="experiences">
                 <strong>Experiences:</strong>
                 <br />
-                2-3 Years in this field.
+                {experiences}
               </p>
             </div>
           </div>
@@ -53,7 +62,7 @@ const Details = () => {
                     <CurrencyDollarIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Salary:</strong> 100K - 150K
+                    <strong>Salary:</strong> {salary}
                   </span>
                 </p>
                 <p className="d-flex gap-1 align-items-center justify-content-start">
@@ -61,7 +70,8 @@ const Details = () => {
                     <CalendarDaysIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Job Title:</strong> Product Designer
+                    <strong>Job Title:</strong> {jobTitle} <br /> ({fulltimeOrParttime}
+                    )
                   </span>
                 </p>
               </div>
@@ -73,7 +83,7 @@ const Details = () => {
                     <PhoneIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Phone:</strong> 01750-00 00 00
+                    <strong>Phone:</strong> {phone}
                   </span>
                 </p>
                 <p className="d-flex gap-1 align-items-center justify-content-start">
@@ -81,7 +91,7 @@ const Details = () => {
                     <EnvelopeIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Email:</strong> info@gmail.com
+                    <strong>Email:</strong> {email}
                   </span>
                 </p>
                 <p className="d-flex gap-1 align-items-center justify-content-start">
@@ -89,8 +99,7 @@ const Details = () => {
                     <MapPinIcon className="featured-job-icon" />
                   </span>
                   <span>
-                    <strong>Address:</strong> Dhanmondi 32, Sukrabad Dhaka,
-                    Bangladesh
+                    <strong>Address:</strong> {location}
                   </span>
                 </p>
               </div>

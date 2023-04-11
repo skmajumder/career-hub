@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import FeaturedJob from "../FeaturedJob/FeaturedJob";
-import { JobAvailableContent } from "../Home/Home";
+import { JobAvailableContext } from "../../App";
 
 const FeaturedJobs = () => {
-  const jobs = useContext(JobAvailableContent);
+  const jobs = useContext(JobAvailableContext);
 
   const [availableJob, setAvailableJob] = useState(jobs);
   const [showAll, setShowAll] = useState(false);

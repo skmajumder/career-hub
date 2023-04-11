@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import JobCategory from "../JobCategory/JobCategory";
-import { JobCategoriesContext } from "../Home/Home";
+import { JobCategoriesContext } from "../../App";
 
 const JobCategories = () => {
   const jobCategories = useContext(JobCategoriesContext);
