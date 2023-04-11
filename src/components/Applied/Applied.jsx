@@ -5,7 +5,7 @@ import AppliedJobList from "../AppliedJobList/AppliedJobList";
 const Applied = () => {
   return (
     <>
-      <Breadcrumb />
+      <Breadcrumb pageTitle={"Applied Jobs"} />
       <AppliedJobList />
     </>
   );

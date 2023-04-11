@@ -1,43 +1,67 @@
 import React from "react";
 import "./JobList.css";
 
-import GoogleImg from "../../../public/imgs/google.png";
-import NetflixImg from "../../../public/imgs/netflix.png";
-import TeslaImg from "../../../public/imgs/tesla.png";
-import AirbnbImg from "../../../public/imgs/airbnb.png";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
-const JobList = () => {
+const JobList = ({ job }) => {
+  const {
+    id: jobID,
+    companyLogo,
+    jobTitle,
+    companyName,
+    remoteOrOnsite,
+    location,
+    fulltimeOrParttime,
+    salary,
+    jobDescription,
+    jobResponsibility,
+    educationalRequirements,
+    experiences,
+    contactInformation: { phone, email },
+  } = job;
+
+  const navigate = useNavigate();
+
+  function navigateToJobDetails(jobID) {
+    navigate(`/job-details/${jobID}`);
+  }
+
   return (
     <div className="col-lg-12 mb-4">
       <div className="d-grid applied-job-item justify-content-between align-items-center">
         <div className="company-img">
-          <img src={GoogleImg} alt="" />
+          <img src={companyLogo} alt="" />
         </div>
         <div className="applied-job-detail">
-          <h4 className="applied-job-title">Technical Database Engineer</h4>
-          <p className="applied-job-company">Google LLC</p>
-          <div class="job-type d-flex gap-3 mb-3">
-            <span class="job-type-box fw-bolder">Remote</span>
-            <span class="job-type-box fw-bolder">Full Time</span>
+          <h4 className="applied-job-title">{jobTitle}</h4>
+          <p className="applied-job-company">{companyName}</p>
+          <div className="job-type d-flex gap-3 mb-3">
+            <span className="job-type-box fw-bolder">{remoteOrOnsite}</span>
+            <span className="job-type-box fw-bolder">{fulltimeOrParttime}</span>
           </div>
           <div className="job-meta-info mb-3 d-flex gap-3">
             <div className="d-flex gap-1 align-items-center justify-content-between">
               <span>
                 <MapPinIcon className="featured-job-icon" />
               </span>
-              <span>Dhaka, Bangladesh</span>
+              <span>{location}</span>
             </div>
             <div className="d-flex gap-1 align-items-center justify-content-between">
               <span>
                 <CurrencyDollarIcon className="featured-job-icon" />
               </span>
-              <span>Salary : 100K - 150K</span>
+              <span>Salary : {salary}</span>
             </div>
           </div>
         </div>
         <div>
-          <button className="btn-job-details">View Details</button>
+          <button
+            onClick={() => navigateToJobDetails(jobID)}
+            className="btn-job-details"
+          >
+            View Details
+          </button>
         </div>
       </div>
     </div>

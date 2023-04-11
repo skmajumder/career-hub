@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import JobList from "../JobList/JobList";
+import { JobAvailableContext } from "../../App";
+import { getStoredAppliedJobs } from "../../utilities/fakedb";
 
 const AppliedJobList = () => {
+  const appliedJobs = getStoredAppliedJobs();
+  const availableJobs = useContext(JobAvailableContext);
+
+  const jobs = [];
+  if (appliedJobs.length > 0) {
+    for (const jobID of appliedJobs) {
+      jobs.push(availableJobs.find((job) => job.id === jobID));
+    }
+  }
+
   return (
     <section className="section-padding applied-job-lists">
       <div className="container">
@@ -14,11 +26,9 @@ const AppliedJobList = () => {
           </div>
         </div>
         <div className="row">
-          <JobList />
-          <JobList />
-          <JobList />
-          <JobList />
-          <JobList />
+          {jobs.map((job) => (
+            <JobList key={job.id} job={job} />
+          ))}
         </div>
       </div>
     </section>
