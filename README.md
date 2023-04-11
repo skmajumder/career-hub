@@ -3,7 +3,7 @@
 ## Live Link
 
 Hosted in Netlify -> [JobBox](https://b7a9-career-hub-skmajumder.netlify.app)
-Hosted in Surge -> [JobBox](old-tail.surge.sh)
+Hosted in Surge -> [JobBox](http://old-tail.surge.sh)
 
 ## Best features in JobBox
 
